@@ -1,0 +1,102 @@
+@media(max-width: 750px){
+    .pages{
+        padding: 0;
+    }
+    .header__top-links{
+        position: absolute;
+        left: -100%;
+        transition: 0.3s;
+    }
+    .header__top{
+        height: 60px;
+    }
+    .burger{
+        display: block;
+    }
+    .header__top-nav-ul{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+       text-align: center;
+       transition: 0.3s;
+       left: -100%;
+       top: 43px;
+       height: 100%;
+    }
+    .nav-link{
+        margin: 20px 0px;
+    }
+    .header__top-nav-ul.active{
+        left: 0;
+        z-index: 50;
+        background: #241043;
+    }
+    .header__top-links.active{
+        display: flex;
+        left: 50%;
+        margin-left: -46px;
+        top: 260px;
+        z-index: 50;
+        transition: 0.3s;
+       
+    }
+    .link-header{
+        font-size: 12px;
+    }
+
+    .header__content-text{
+        width: 100%;
+    }
+    .header__content-numbers{
+        max-width: 300px;
+        margin: 60px auto 0;
+    }
+    .header__content-numbers .numbers-3 p,
+    .header__content-numbers .centes p,
+    .header__content-numbers .numbers-1 p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+    }
+    .header__content-numbers .numbers-3 span{
+                 font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+    }
+
+}
+
+
+@media(max-width: 500px){
+    .header__content-text-title{
+        font-size: 42px;
+        line-height: 137.4%;
+    }
+    .header__content-text-title span{
+        font-size: 42px;
+line-height: 137.4%;
+    }
+    .header__content-text p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .header__content-links .link-header{
+        font-size: 12px;
+        margin-left: 20px;
+        line-height: 15px;
+    }
+    .header__content-links .btn-link {
+        font-size: 12px;
+        width: 50%;
+        
+        text-align: left;
+        padding: 20px 0px 0px 40px;
+        position: relative;
+        z-index: 0;
+    }
+    .header__content-links .btn-link::after{
+        font-size: 30px;
+        position: absolute;
+        top: 16px
+    }
+}
