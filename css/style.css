@@ -248,6 +248,130 @@ a {
   letter-spacing: 0.221092px;
   color: #FFFFFF;
 }
+.header__content-photo {
+  height: 50%;
+  position: relative;
+  margin-left: 40px;
+}
+.header__content-photo .card {
+  position: absolute;
+  bottom: -80px;
+  right: -100px;
+  background: url("../image/backCARD.png") no-repeat;
+  background-size: cover;
+  padding: 27px 27px 18px 35px;
+}
+.header__content-photo .card .obl-card {
+  display: flex;
+}
+.header__content-photo .card .obl-card .info-card h3 {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.6873px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.header__content-photo .card .obl-card .info-card .card-user {
+  display: flex;
+  align-items: center;
+}
+.header__content-photo .card .obl-card .info-card .card-user p {
+  margin: 0 10px;
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.4764px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.header__content-photo .card .obl-card .info-card p {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.0546px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.header__content-photo .card .obl-card .info-card .info-card-eth {
+  display: flex;
+  align-items: center;
+}
+.header__content-photo .card .obl-card .info-card .info-card-eth p {
+  margin: 0;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9.71776px;
+  line-height: 12px;
+  color: #FFFFFF;
+  margin: 0 10px 0px 5px;
+}
+.header__content-photo .card .obl-card .info-card .info-card-eth .summ-card {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.0546px;
+  line-height: 35px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.header__content-photo .card .obl-card .card-summ {
+  margin-left: 30px;
+}
+.header__content-photo .card .obl-card .card-summ p {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.0546px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.header__content-photo .card .obl-card .card-summ .center-card {
+  margin: 0 20px;
+}
+.header__content-photo .card .obl-card .card-summ .card-time {
+  display: flex;
+}
+.header__content-photo .card .obl-card .card-summ .card-time .time-sum p {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.6873px;
+  line-height: 35px;
+  color: #FFFFFF;
+  height: 20px;
+}
+.header__content-photo .card .obl-card .card-summ .card-time .time-sum span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.0546px;
+  line-height: 35px;
+  margin-top: -50px;
+  color: #FFFFFF;
+}
+.header__content-photo .card .obl-card .card-summ a {
+  background: url("../image/icons/bgc-btn.svg") no-repeat;
+  background-size: cover;
+  padding: 15px 45px 10px 10px;
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.6873px;
+  line-height: 23px;
+  color: #FFFFFF;
+  position: relative;
+  width: 140px;
+  margin-top: 20px;
+}
+.header__content-photo .card .obl-card .card-summ a::after {
+  content: "→";
+  margin-left: 20px;
+  font-size: 25px;
+  position: absolute;
+}
 
 .burger {
   display: none;
