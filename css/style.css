@@ -143,25 +143,41 @@ a {
   display: flex;
   margin-top: 40px;
 }
-.header__content-links .btn-link {
-  font-family: "Orbitron";
+.header__content-links button {
   background: url("../image/icons/bgc-btn.png") no-repeat;
   background-position: center;
   background-size: contain;
+  height: 65px;
+  border: 0;
   width: 260px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header__content-links .btn-link {
+  font-family: "Orbitron";
   font-style: normal;
   font-weight: 700;
   font-size: 19.8983px;
   line-height: 25px;
   color: #FFFFFF;
-  height: 68px;
-  text-align: center;
-  padding: 20px 0 0;
+  width: inherit;
+  height: inherit;
+  display: block;
+  height: 101%;
+  width: 101%;
+  padding: 15px 0 0;
+  transition: 0.5s;
 }
 .header__content-links .btn-link::after {
   content: "→";
   margin-left: 10px;
   font-size: 30px;
+}
+.header__content-links button:hover {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.header__content-links .btn-link:hover {
+  transform: rotateY(180deg);
 }
 .header__content-links .link-header {
   font-family: "Orbitron";
@@ -175,6 +191,12 @@ a {
   background-clip: text;
   margin-left: 40px;
   margin-top: 20px;
+  transition: 0.5s;
+}
+.header__content-links .link-header:hover {
+  background: linear-gradient(300deg, #42A6E3 2.33%, #FF56F6 101.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header__content-numbers {
   margin-top: 60px;
@@ -263,6 +285,10 @@ a {
 }
 .header__content-photo .card .obl-card {
   display: flex;
+  justify-content: space-between;
+}
+.header__content-photo .card .obl-card .info-card {
+  margin-right: 20px;
 }
 .header__content-photo .card .obl-card .info-card h3 {
   font-family: "Rajdhani";
@@ -290,7 +316,7 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 11.0546px;
-  line-height: 35px;
+  line-height: 30px;
   color: #FFFFFF;
   margin-top: 20px;
 }
@@ -304,7 +330,6 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 9.71776px;
-  line-height: 12px;
   color: #FFFFFF;
   margin: 0 10px 0px 5px;
 }
@@ -316,9 +341,6 @@ a {
   line-height: 35px;
   color: #FFFFFF;
   opacity: 0.7;
-}
-.header__content-photo .card .obl-card .card-summ {
-  margin-left: 30px;
 }
 .header__content-photo .card .obl-card .card-summ p {
   font-family: "Rajdhani";
@@ -352,10 +374,20 @@ a {
   margin-top: -50px;
   color: #FFFFFF;
 }
-.header__content-photo .card .obl-card .card-summ a {
+.header__content-photo .card .obl-card .card-summ button {
   background: url("../image/icons/bgc-btn.svg") no-repeat;
   background-size: cover;
-  padding: 15px 45px 10px 10px;
+  border: 0;
+  width: 145px;
+  height: 49px;
+  padding: 0;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.header__content-photo .card .obl-card .card-summ button:hover {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.header__content-photo .card .obl-card .card-summ .btn-span {
   font-family: "Rajdhani";
   font-style: normal;
   font-weight: 600;
@@ -363,14 +395,23 @@ a {
   line-height: 23px;
   color: #FFFFFF;
   position: relative;
-  width: 140px;
-  margin-top: 20px;
+  display: block;
+  height: 101%;
+  width: 101%;
+  margin-left: 0px;
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 40px;
 }
-.header__content-photo .card .obl-card .card-summ a::after {
+.header__content-photo .card .obl-card .card-summ .btn-span::after {
   content: "→";
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 25px;
   position: absolute;
+  top: 14px;
+}
+.header__content-photo .card .obl-card .card-summ .btn-span:hover {
+  transform: rotateY(180deg);
 }
 
 .burger {
