@@ -1,492 +1,297 @@
-@import 'zmins';
-
 // settings
-body{
-    font-family: 'Spartan';
-    font-family: 'Rajdhani', sans-serif;
-    font-family: 'Aldrich', sans-serif;
-    font-family: $orbition;
-   
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p{
+    margin: 0;
 }
 *,
 *::after,
 *::before{
     box-sizing: border-box;
 }
-body, 
-h1, 
-h2,
-h3, 
-h4, 
-h5, 
-h6,
-p{
-    margin: 0;
+body{
+    font-family: "Spartan";
+    font-family: "Rajdhani", sans-serif;
+    font-family: "Aldrich", sans-serif;
+    font-family: "Orbitron", sans-serif;
+    overflow-x: hidden;
 }
 a{
     display: block;
     text-decoration: none;
 }
 
-
 .container{
-    max-width: 1450px;
+    max-width: 1340px;
     padding: 0 25px;
+    width: 100%;
     margin: 0 auto;
 }
+
+// pages
 .pages{
-    background: url('../image/background.png') no-repeat;
+    background: url('../images/pages-bgc.png') no-repeat;
     background-size: cover;
     background-position: top center;
-    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
-// вложенность хедера
-.header__top{
+header{
+    width: 100%;
+    z-index: 50;
+    transition: 0.5s;
+    height: 60px;
+    top: 0;
+}
+
+.header{
     display: flex;
-    justify-content: space-between;
+    padding-top: 40px;
+    
     align-items: center;
-    height: 50px;
-  
-   
-    &-logo{
-        .logo-link{
-        display: flex;
-
-        .logo-img{
-            vertical-align: middle;
-        }
-        .logo-text{
-        font-family: 'Orbitron';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 19.8983px;
-        line-height: 25px;  
-        color: rgba(255, 255, 255, 0.6);
-        span{
-            color: white;
-        }
-        }
-       }
-    }
-
-    &-nav{
-        height: inherit;
+    &__logo{
         display: flex;
         align-items: center;
-        &-ul{
+        p{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19.8983px;
+            line-height: 25px;
+
+            color: rgba(255, 255, 255, 0.6);
+            span{
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 100%;
+        align-items: center;
+        margin-left: 100px;
+       
+
+        nav{
+            
+            .nav{
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                li:nth-child(2){
+                    margin: 0 50px;
+                }
+                li{
+                    a{
+                        font-family: 'Orbitron';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 19.8983px;
+                        line-height: 25px;
+    
+                        color: rgba(255, 255, 255, 0.6);
+                        transition: 0.3s;
+                    }
+                    a:hover{
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+        &-link{
             display: flex;
-            list-style-type: none;
-            padding: 0;
             align-items: center;
-            li{
-                .nav-link{
-                    align-items: center;
-                    display: block;
-                    padding: 0 60px 0;
+            a:nth-child(1){
+                margin: 0 20px;
+            }
+            a{
+                img{
+                    transition: 0.3s;
+                }
+                img:nth-child(2){
+                    vertical-align: middle;
+                }
+                img:hover{
+                    width: 125%;
+                }
+            }
+           
+            
+            
+        }
+       
+    }
+    .burger{
+        display: none;
+        
+        cursor: pointer;
+        .humb{
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: #FFFFFF;
+            margin: 6px 0px;
+            transition: 0.3s;
+        }
+        
+    }
+    .burger.active .humb:nth-child(2){
+        opacity: 0;
+    }
+    .burger.active .humb:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active .humb:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+main{
+    margin-top: 100px;
+}
+.content{
+    display: grid;
+    min-width: 200px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 1fr 10px;
+
+    &__left{
+        grid-column: 1/2;
+        &-title{
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 66.3276px;
+            line-height: 137.4%;
+            /* or 91px */
+
+
+            color: #FFFFFF;
+            span{
+                 background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+        &-text{
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26.531px;
+            line-height: 44px;
+            /* or 167% */
+
+
+            color: #FFFFFF;
+            max-width: 660px;
+            margin-top: 20px;
+            margin-right: 0;
+        }
+        &-btn{
+            margin-top: 40px;
+            max-width: 430px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                cursor: pointer;
+                background: url('../images/icons/btn-left.svg') no-repeat;
+                width: 250px;
+                border: 0;
+                height: 67px;
+                background-size: cover;
+                text-align: start;
+                padding-left: 40px;
+                // transition: 0.1s;
+
+                .span-text{
                     font-family: 'Orbitron';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 19.8983px;
                     line-height: 25px;
-                   
-                    color: rgba(255, 255, 255, 0.6);
+                    color: #FFFFFF;
+                    // transition: 0.1s;
+                    display: block;
+                    position: relative;
                 }
-                .start{
-                    padding: 0px 0px 0px;
+                .span-text::after{
+                    content: '→';
+                    position: absolute;
+                    font-size: 40px;
+                    top: -3px;
+                    right: 40px;
                 }
-                .end{
-                    padding: 0;
-                }
+            } button:hover{
+                transform: matrix(-1, 0, 0, 1, 0, 0);
             }
-        }
-    }
-
-    &-links{
-        display: flex;
-        align-items: center;
-        .links-start{
-            margin-right: 40px;
-        }
-    }
-
-
-
-
-
-}
-.header__content{
-    display: flex;
-    margin-top: 100px;
-   &-text{
-    width: 60%;
-    padding-bottom: 50px;
-    &-title{
-        font-family: 'Spartan';
-font-style: normal;
-font-weight: 600;
-font-size: 66.3276px;
-line-height: 137.4%;
-/* or 91px */
-color: #FFFFFF;
-    span{
-        font-family: 'Spartan';
-font-style: normal;
-font-weight: 600;
-font-size: 66.3276px;
-line-height: 137.4%;
-/* or 91px */
-
-
-background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-    }
-    }
-    p{
-        font-family: 'Rajdhani';
-font-style: normal;
-font-weight: 400;
-font-size: 26.531px;
-line-height: 44px;
-color: #FFFFFF;
-margin-top: 20px;
-max-width: 650px;
-    }
-   }
-   &-links{
-    display: flex;
-    margin-top: 40px;
-    button{
-        background: url('../image/icons/bgc-btn.png') no-repeat;
-        background-position: center;
-        background-size: contain;
-        height: 65px;
-        border: 0;
-        width: 260px;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .btn-link{
-    font-family: 'Orbitron';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19.8983px;
-    line-height: 25px;
-    color: #FFFFFF;
-    width: inherit;
-    height: inherit;
-    display: block;
-    height: 101%;
-    width: 101%;
-    padding: 15px 0 0;
-        transition: 0.5s;
-
-    }
-    .btn-link::after{
-        content: '\2192';
-        margin-left: 10px;
-        font-size: 30px;
-    }
-    
-    button:hover{
-        transform:  matrix(-1, 0, 0, 1, 0, 0);
-    }
-    .btn-link:hover{
-        transform:  rotateY(180deg)
-    }
-    .link-header{
-        font-family: 'Orbitron';
-font-style: normal;
-font-weight: 700;
-font-size: 19.8983px;
-line-height: 25px;
-
-background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-margin-left: 40px;
-margin-top: 20px;
-transition: 0.5s;
-    }
-
-    .link-header:hover{
-        background: linear-gradient(300deg, #42A6E3 2.33%, #FF56F6 101.4%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        // background-clip: text;
-        
-    }
-
-   }
-
-
-   &-numbers{
-    margin-top: 60px;
-    display: flex;
-    .centes{
-        border-left: 1px solid rgba(255, 255, 255, 0.26);
-        border-right: 1px solid rgba(255, 255, 255, 0.26);
-        padding: 0 25px;
-        p{
-            font-family: 'Aldrich';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 39.7965px;
-            line-height: 53px;
-            letter-spacing: 0.221092px;
-            color: #FFFFFF;
-            margin-top: 0;
-
-        }
-        span{
-            font-family: 'Alethia Next';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17.6873px;
-            line-height: 22px;
-            letter-spacing: 0.221092px;
-            color: #FFFFFF;
-        }
-    }
-    .numbers-1{
-        margin-right: 20px;
-        p{
-            font-family: 'Aldrich';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 39.7965px;
-            line-height: 53px;
-            letter-spacing: 0.221092px;
-            color: #FFFFFF;
-            margin-top: 0;
-        }
-        span{
-            font-family: 'Alethia Next';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17.6873px;
-            line-height: 22px;
-            letter-spacing: 0.221092px;
-            color: #FFFFFF;
-        }
-    }
-    .numbers-3{
-        margin-left: 20px;
-        p{
-            font-family: 'Aldrich';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 39.7965px;
-            line-height: 53px;
-            letter-spacing: 0.221092px;
-            color: #FFFFFF;
-            margin-top: 0;
-        }
-        span{
-            font-family: 'Alethia Next';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17.6873px;
-            line-height: 22px;
-            letter-spacing: 0.221092px;
-            color: #FFFFFF;
-        }
-    }
-   }
-  
-  
-  
-   &-photo{
-    height: 50%;
-    position: relative;
-    margin-left: 40px;
-    .card{
-        position: absolute;
-        bottom: -80px;
-        right: -100px;
-        background: url('../image/backCARD.png') no-repeat;
-        // background-position: center;
-        background-size: cover;
-        padding: 27px 27px 18px 35px;
-        .obl-card{
-            display: flex;
-            justify-content: space-between;
-            .info-card{ 
-                margin-right: 20px;
-                h3{
-                font-family: 'Rajdhani';
+            a{
+                font-family: 'Orbitron';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 17.6873px;
-                line-height: 35px;
-                color:  #FFFFFF;
+                font-size: 19.8983px;
+                line-height: 25px;
+                background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                transition: 0.5s;
             }
-            .card-user{
-                display: flex;
-                align-items: center;
+            a:hover{
+                background: linear-gradient(89.89deg, #42e378 2.33%, #7b56ff 101.4%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+        &-info{
+            display: flex;
+            max-width: 500px;
+            margin-top: 80px;
+            justify-content: space-between;
+            .sered{
+                border-left: 1.10546px solid rgba(255, 255, 255, 0.26);
+                border-right: 1.10546px solid rgba(255, 255, 255, 0.26);
+                padding: 0 30px;
+            }
+            .info-one{
                 p{
-                    margin: 0 10px;
-                    font-family: 'Rajdhani';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 15.4764px;
-                    line-height: 35px;
-                    color: #FFFFFF;
-                }
-            }
-            p{
-                font-family: 'Rajdhani';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 11.0546px;
-                line-height: 30px;
-                color: #FFFFFF;
-                margin-top: 20px;
-            }
-            .info-card-eth{
-                display: flex;
-                align-items: center;
-                p{
-                    margin: 0;
-                    font-family: 'Orbitron';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 9.71776px;
-                    // line-height: 35px;
-                    color: #FFFFFF;
-                    margin: 0 10px 0px 5px;
-                }
-                .summ-card{
-                    font-family: 'Rajdhani';
+                    font-family: 'Aldrich';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 11.0546px;
-                    line-height: 35px;
+                    font-size: 39.7965px;
+                    line-height: 53px;
                     color: #FFFFFF;
-                    opacity: 0.7;
+                }
+                span{
+            font-family: 'Alethia Next';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17.6873px;
+            line-height: 22px;
+            color: #FFFFFF;
                 }
             }
         }
-
-
-
-
-
-        .card-summ{
-            p{
-                font-family: 'Rajdhani';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 11.0546px;
-                line-height: 35px;
-                color: #FFFFFF;
-            }
-            .center-card{
-                margin: 0 20px;
-            }
-            .card-time{
-                display: flex;
-                .time-sum{
-                    p{
-                        font-family: 'Rajdhani';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 17.6873px;
-                        line-height: 35px;
-                        color: #FFFFFF;
-                        height: 20px;
-                    }
-                    span{
-                        font-family: 'Rajdhani';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 11.0546px;
-                        line-height: 35px;
-                        margin-top: -50px;
-                        color: #FFFFFF;
-                    }
-                }
-            }
-            button{
-                background: url('../image/icons/bgc-btn.svg') no-repeat;
-                background-size: cover;
-                border: 0;
-                width: 145px;
-                height: 49px;
-                padding: 0;
-                margin-top: 20px;
-                cursor: pointer;
-                
-            }
-            button:hover{
-                transform:  matrix(-1, 0, 0, 1, 0, 0);
-            }
-            .btn-span{
-                font-family: 'Rajdhani';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 17.6873px;
-                line-height: 23px;
-                color: #FFFFFF;
-                position: relative;
-               display: block;
-               height: 101%;
-               width: 101%;
-               margin-left: 0px;
-               text-align: center;
-               padding-top: 15px;
-               padding-right: 40px;
-            }
-            .btn-span::after{
-                content: '\2192';
-                margin-left: 10px;
-                font-size: 25px;
-                
-                position: absolute;
-                top: 14px;
-            }
-            .btn-span:hover{
-                transform:  rotateY(180deg)
-            }
+    }
+    &__right{
+        grid-column: 2/3;
+        img{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
         }
-        }
-        
-       
-
-    }
-   }
-
-}
-
-
-
-
-.burger{
-    display: none;
-    cursor: pointer;
-    .humb{
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: 0.3s;
-        background-color: white;
-        border-radius: 2px;
-    }
-    .humb:nth-child(2){
-        width: 15px;
-        margin: 5px 0 0 auto;
     }
 }
-.burger.active .humb:nth-child(2){
-    opacity: 0;
-}
-.burger.active .humb:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-}
-.burger.active .humb:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-}
+

@@ -14,124 +14,89 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
-
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media/media.css">
-    <title>Document</title>
+    <title>OceanNFT</title>
 </head>
 <body>
     
     <div class="pages">
 
-        <header class="header">
+        <header>
+
             <div class="container">
-                <div class="header__top">
-                    <div class="header__top-logo">
-                        <a href="" class="logo-link">
-                        <img class="logo-img" src="image/icons/logo.svg" alt="">
-                        <p class="logo-text">Ocean<span>NFT</span></p>
-                        </a>
+                <div class="header">
+
+                    <div class="header__logo">
+                        <a href=""><img src="images/icons/logo.svg" alt=""></a>
+                        <a href="https://www.figma.com/file/1aeYohhQN5MbVxjAMm3Sb2/OCEAN-NFT-(SpaceLab)-(Copy)?node-id=2%3A225"><p>Ocean<span>NFT</span></p></a>
                     </div>
 
-                    
+                    <div class="header__content">
+                        <nav>
+                            <ul class="nav">
+                                <li><a class="nav-link" href="#">Market</a></li>
+                                <li><a class="nav-link" href="#">Features</a></li>
+                                <li><a  class="nav-link" href="#">Community</a></li>
+                            </ul>
+                        </nav>
 
-                    <nav class="header__top-nav">
-                        <ul class="header__top-nav-ul">
-                            <li><a href="#" class="nav-link start">Market</a></li>
-                            <li><a href="#" class="nav-link">Features</a></li>
-                            <li><a href="#" class="nav-link end">Community</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="header__top-links">
-                        <a class="links-start" href=""><img src="image/icons/akar-icons_cart.svg" alt=""></a>
-                        <a href=""><img src="image/icons/people.svg" alt=""></a>
+                        <div class="header__content-link">
+                            <a href=""><img src="images/icons/akar-icons_cart (2).svg" alt=""></a>
+                            <a href=""><img src="images/icons/people.svg" alt=""></a>
+                        </div>
+                       
                     </div>
                     <div class="burger">
                         <span class="humb"></span>
                         <span class="humb"></span>
                         <span class="humb"></span>
-                    </div>
-
                 </div>
-
-
-                    <div class="header__content">
-
-                        <div class="header__content-text">
-                        <h1 class="header__content-text-title">Discover, collect, and sell <span>Timeless</span>  NFTs</h1>
-                            <p>The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs). </p>
-                            <div class="header__content-links">
-                                <button> <span class="btn-link">Explore</span></button>
-                                <a href="" class="link-header">Create NFT’s</a>
-                            </div>
-
-                            <div class="header__content-numbers">
-                                <div class="numbers-1">
-                                    <p>35m+</p>
-                                    <span>Artwork</span>
-                                </div>
-                                <div class="numbers centes">
-                                    <p>18m+</p>
-                                    <span>Auctions</span>
-                                </div>
-                                <div class="numbers-3">
-                                    <p>500k+</p>
-                                    <span>Artists</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="header__content-photo">
-                            <div class="photo-img">
-                            <img class="card-info-img" src="image/dog.png" alt="">
-                        </div>
-                            <div class="card">
-                                <div class="obl-card">
-
-
-                            <div class="info-card">
-                                <h3>3D Abstract Hand</h3>
-                                <div class="card-user">
-                                    <img src="image/icons/user.svg" alt="">
-                                    <p>@jhonartist</p>
-                                    <img src="image/icons/yes.svg" alt="">
-                                </div>
-                                <p>Reserve price</p>
-                                <div class="info-card-eth">
-                                    <img src="image/icons/Ethereum-icon-purple_2 1.svg" alt="">
-                                    <p>ETH 9.31</p>
-                                    <p class="summ-card">($29,8846)</p>
-                                </div>
-                            </div>
-
-
-                            <div class="card-summ">
-                                <p>Auction Ends in</p>
-                                <div class="card-time">
-                                <div class="time-sum">
-                                    <p>18</p>
-                                    <span>Hours</span>
-                                </div>
-                                <div class="time-sum center-card">
-                                    <p>25</p>
-                                    <span>Mins</span>
-                                </div>
-                                <div class="time-sum">
-                                    <p>44</p>
-                                    <span>Secs</span>
-                                </div>
-                            </div>
-                            <button> <span class="btn-span"> Place Bid</span></button>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                     </div>
-
+            </div>
+           
             </div>
         </header>
+       <main class="main">
+        <section >
+            <div class="container">
+                <div class="content">
+                    <div class="content__left">
+                        <h1 class="content__left-title">Discover, collect, and sell <span>Timeless</span> NFTs</h1>
+                        <p class="content__left-text">The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs). </p>
+                        <div class="content__left-btn">
+                            <button id="btn-left"><span class="span-text" id="span-text">Explore</span></button>
+                            <a href="">Create NFT’s</a>
+                        </div>
+                        <div class="content__left-info">
+                            <div class="info-one">
+                                <p>35m+</p>
+                                <span>Artwork</span>
+                            </div>
+                            <div class="info-one sered">
+                                <p>18m+</p>
+                                <span>Auctions</span>
+                            </div>
+                            <div class="info-one">
+                                <p>500k+</p>
+                                <span>Artists</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content__right">
+                        <img src="images/bgc-dog.png" alt="">
+                    </div>
+                    <div class="content__bottom">
+                        <p>adsad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       </main>
+
 
     </div>
 <script src="js/script.js"></script>

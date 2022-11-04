@@ -1,173 +1,144 @@
+@media(max-width: 1000px){
+    .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px 1fr;
+        max-width: 100%;
 
+    }
+    .content__left{
+        grid-row: 1/2;
+    }
+    .content__bottom{
+       grid-row: 2/3;
+    }
+    .content__right{
+        grid-column: 1/2;
+        grid-row: 3/4;
+      
+    }
+}
 
-@media(max-width: 1260px){
+@media(max-width:800px){
+ 
     .header__content{
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        top: 75px;
+        width: 100%;
+        height: 100vh;
+       left: -100%;
+       margin: 0;
+       transition: 0.3s;
+    }
+    .header__content nav .nav{
         flex-direction: column;
     }
-    .header__content-photo{
-        max-width: 400px;
-        margin: 0 auto;
+    .header{
+        flex-basis: 100%;
+        justify-content: space-between;
     }
-    .header__content-photo .card{
-        right: 0;
-    }
-    .header__content-text{
-        margin: 0 auto;
-        max-width: 840px;
-    }
-    .pages{
-        padding: 0;
-    }
-    .header__top-links{
-        position: absolute;
-        left: -100%;
-        transition: 0.3s;
-    }
-    .header__top{
-        height: 60px;
-    }
-    .burger{
+    .header .burger{
         display: block;
     }
-    .header__top-nav-ul{
-        position: absolute;
-        flex-direction: column;
-        width: 100%;
-       text-align: center;
-       transition: 0.3s;
-       left: -100%;
-       top: 43px;
-       height: 100%;
+    .header__content.active{
+        left: 0;
+        background: url('../../images/pages-bgc.png') no-repeat;
+        background-position: top center;
+        background-size: cover;
+        transition: 0.3s;
     }
-    .nav-link{
+    .header__content nav .nav li a{
         margin: 20px 0px;
     }
-    .header__top-nav-ul.active{
-        left: 0;
-        z-index: 50;
-        background: #241043;
+    .header__content-link{
+        flex-direction: column;
+        padding-top: 20px;
     }
-    .header__top-links.active{
-        display: flex;
-        left: 50%;
-        margin-left: -46px;
-        top: 260px;
-        z-index: 50;
-        transition: 0.3s;
-       
+    .header__content-link a{
+        margin: 20px 0;
     }
-    .link-header{
-        font-size: 12px;
-    }
-
-    .header__content-text{
-        width: 100%;
-    }
-    .header__content-numbers{
-        max-width: 300px;
-        margin: 60px auto 0;
-    }
-    .header__content-numbers .numbers-3 p,
-    .header__content-numbers .centes p,
-    .header__content-numbers .numbers-1 p{
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-    }
-    .header__content-numbers .numbers-3 span{
-                 font-weight: 400;
-                font-size: 12px;
-                line-height: 12px;
-    }
-
 }
+@media(max-width: 768px){
 
-
-@media(max-width: 500px){
-    .header__content-text-title{
+    .content__left-title{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
         font-size: 42px;
         line-height: 137.4%;
+        /* or 58px */
+
+
+        color: #FFFFFF;
     }
-    .header__content-text-title span{
-        font-size: 42px;
-line-height: 137.4%;
-    }
-    .header__content-text p{
+    .content__left-text{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 23px;
-    }
-    .header__content-links .link-header{
-        font-size: 12px;
-        margin-left: 20px;
-        line-height: 15px;
-        margin-top: 0;
-    }
-    .header__content-links button{
-        width: 50%;
-    }
-    .header__content-links .btn-link {
-        font-size: 12px;
-        position: relative;
-        width: 100%;
-        padding: 18px 0 0 0;
-        z-index: 0;
-        padding-left: 0;
-        text-align: center;
-        margin-left: -20px;
-    }
-    .header__content-links .btn-link:hover{
-        margin-left: 20px;
-    }
-    .header__content-links .btn-link::after{
-        font-size: 30px;
-        position: absolute;
-        
-        top: 15px
-    }
+        /* or 166% */
 
-    .card-info-img{
+
+        color: #FFFFFF;
+
+    }
+    .content__left-btn {
         width: 100%;
-        height: 385px;
-    }
-    .header__content-photo .card{
-        max-width: 324px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 27px 15px 18px 30px;
-    }
-    .header__content-photo .card .obl-card .card-summ a{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 22px;
-        width: 100%;
-    }
-    .header__content-photo .card .obl-card .card-summ a::after{
-        font-size: 19px;
-        margin-left: 9px;
-    }
-    .header__content-photo .card .obl-card .info-card .info-card-eth p{
-        margin: 0 5px 0 0px;
-    }
-    .header__content-links{
         align-items: center;
     }
-    .header__content-photo .card .obl-card .card-summ .center-card{
-        margin: 0 10px;
+    .content__left-btn button{
+       
+        background-size: contain;
+        width: 150px;
+        height: 40px;
+        padding-left: 20px;
+        
     }
-    .header__content-photo .card .obl-card .card-summ button{
-        margin-left: -15px;
+    .content__left-btn button .span-text{
+        
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* margin-bottom: 22px; */
+        color: #FFFFFF;
     }
-}
+    .content__left-btn button .span-text::after{
+        right: 20px;
+        font-size: 25px;
+    }
+    .content__left-btn a {
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
 
-@media(max-width: 375px){
-    .header__content-photo .card{
-        /* max-width: 324px; */
-        width: 100%;
-        margin: 0 auto;
-        padding: 27px 15px 18px 30px;
     }
-    .header__content-photo .card .obl-card .card-summ a{
+    .content__left-info {
         width: 100%;
     }
+    .content__left-info .sered{
+        border: 0;
+    }
+    .content__left-info .info-one p{
+        font-family: 'Aldrich';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .content__left-info .info-one span{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+
 }
