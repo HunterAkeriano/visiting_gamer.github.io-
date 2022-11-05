@@ -40,20 +40,32 @@ a {
   background: url("../images/pages-bgc.png") no-repeat;
   background-size: cover;
   background-position: top center;
-  padding-bottom: 100px;
 }
 
 header {
-  width: 100%;
-  z-index: 50;
-  transition: 0.5s;
-  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
+  z-index: 50;
+  width: 100%;
+  transition: 0.5s;
+  height: 100px;
+  top: 0;
+}
+
+.header-fixed {
+  background: rgb(32, 8, 59);
+  opacity: 0.7;
+}
+
+.header-fixed:hover {
+  opacity: 1;
 }
 
 .header {
   display: flex;
   padding-top: 40px;
+  transition: 0.5s;
   align-items: center;
 }
 .header__logo {
@@ -112,9 +124,6 @@ header {
 .header__content-link a img:nth-child(2) {
   vertical-align: middle;
 }
-.header__content-link a img:hover {
-  width: 125%;
-}
 .header .burger {
   display: none;
   cursor: pointer;
@@ -138,6 +147,7 @@ header {
 }
 
 main {
+  transition: 0.5s;
   margin-top: 100px;
 }
 
@@ -145,7 +155,7 @@ main {
   display: grid;
   min-width: 200px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 4fr 1fr 10px;
+  grid-template-rows: 600px 100px 10px;
 }
 .content__left {
   grid-column: 1/2;
@@ -185,35 +195,45 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.content__left-btn button {
+.content__left-btn .hexagon_btn {
+  font-family: Cinzel, "Open Sans", sans-serif;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  padding: 2px;
+  -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+          clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  white-space: nowrap;
   cursor: pointer;
-  background: url("../images/icons/btn-left.svg") no-repeat;
-  width: 250px;
   border: 0;
-  height: 67px;
-  background-size: cover;
-  text-align: start;
-  padding-left: 40px;
+  transition: 0.5s;
 }
-.content__left-btn button .span-text {
+.content__left-btn .hexagon_btn span {
+  display: block;
+  padding: 20px 100px 20px 40px;
+  color: white;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+          clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  transition: 0.5s;
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 700;
   font-size: 19.8983px;
   line-height: 25px;
   color: #FFFFFF;
-  display: block;
   position: relative;
 }
-.content__left-btn button .span-text::after {
+.content__left-btn .hexagon_btn span:after {
   content: "→";
   position: absolute;
   font-size: 40px;
-  top: -3px;
-  right: 40px;
+  top: 15px;
+  right: 50px;
 }
-.content__left-btn button:hover {
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+.content__left-btn .hexagon_btn span:hover {
+  background: linear-gradient(180deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+}
+.content__left-btn .hexagon_btn:hover {
+  background: linear-gradient(130deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
 }
 .content__left-btn a {
   font-family: "Orbitron";
@@ -222,14 +242,6 @@ main {
   font-size: 19.8983px;
   line-height: 25px;
   background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  transition: 0.5s;
-}
-.content__left-btn a:hover {
-  background: linear-gradient(89.89deg, #42e378 2.33%, #7b56ff 101.4%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -269,4 +281,7 @@ main {
   width: 100%;
   display: block;
   margin: 0 auto;
+}
+.content__bottom {
+  grid-column: 1/3;
 }/*# sourceMappingURL=style.css.map */

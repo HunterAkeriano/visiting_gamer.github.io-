@@ -27,32 +27,20 @@ function closeMenu(){
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 
 // крутилка на кнопке
-const btn = document.getElementById('btn-left');
-const spanText = document.getElementById('span-text');
-btn.onmouseover = btn.onmouseout = handler;
 
-function handler(event) {
-
-  function str(el) {
-    if (!el) return "null"
-    return el.className || el.tagName;
-  }
-
-
-  if (event.type == 'mouseover') {
-
-    spanText.style.transform = "rotateY(180deg)";
-    spanText.style.padding = '0 0 0 20px';
-  }
-  if (event.type == 'mouseout') {
-    spanText.style.transform = 'none';
-    spanText.style.padding = '0';
-  }
-}
 
 // fixed header
 
 const header = document.querySelector('.header-header');
 const main = document.getElementById('main');
-// let headerHeight = header.offset
-console.log(header);
+let headerHeight = header.offsetHeight;
+const mainHeight = main.offsetHeight;
+window.addEventListener('scroll', ()=>{
+  let scrollDistance = window.scrollY;
+
+  if(scrollDistance >= 80){
+    header.classList.add('header-fixed');
+  }else{
+    header.classList.remove('header-fixed');
+  }
+})

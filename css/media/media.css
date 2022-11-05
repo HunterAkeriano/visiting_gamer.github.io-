@@ -1,7 +1,10 @@
 @media(max-width: 1000px){
+    .main{
+        margin-top: 20px;
+    }
     .content{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 100px 1fr;
+        grid-template-rows: 700px 100px 1fr;
         max-width: 100%;
 
     }
@@ -48,6 +51,7 @@
         background-position: top center;
         background-size: cover;
         transition: 0.3s;
+        z-index: 60;
     }
     .header__content nav .nav li a{
         margin: 20px 0px;
@@ -59,9 +63,15 @@
     .header__content-link a{
         margin: 20px 0;
     }
+   
 }
 @media(max-width: 768px){
+    .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 100px 1fr;
+        max-width: 100%;
 
+    }
     .content__left-title{
         font-family: 'Lato';
         font-style: normal;
@@ -85,7 +95,7 @@
         color: #FFFFFF;
 
     }
-    .content__left-btn {
+    /* .content__left-btn {
         width: 100%;
         align-items: center;
     }
@@ -96,8 +106,8 @@
         height: 40px;
         padding-left: 20px;
         
-    }
-    .content__left-btn button .span-text{
+    } */
+    /* .content__left-btn button .span-text{
         
         font-family: 'Orbitron';
         font-style: normal;
@@ -105,12 +115,12 @@
         font-size: 12px;
         line-height: 15px;
         /* margin-bottom: 22px; */
-        color: #FFFFFF;
-    }
-    .content__left-btn button .span-text::after{
+        /* color: #FFFFFF; */
+    /* } */
+    /* .content__left-btn button .span-text::after{
         right: 20px;
         font-size: 25px;
-    }
+    } */ */
     .content__left-btn a {
         font-family: 'Orbitron';
         font-style: normal;
