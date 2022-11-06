@@ -4,7 +4,7 @@
     }
     .content{
         grid-template-columns: 1fr;
-        grid-template-rows: 700px 100px 1fr;
+        grid-template-rows: 700px 200px 1fr;
         max-width: 100%;
 
     }
@@ -75,7 +75,7 @@
 @media(max-width: 768px){
     .content{
         grid-template-columns: 1fr;
-        grid-template-rows: 500px 100px 1fr;
+        grid-template-rows: 500px 200px 1fr;
         max-width: 100%;
 
     }
@@ -156,9 +156,47 @@
         font-size: 12px;
         line-height: 12px;
     }
-
+    .content__bottom .content__bottom-link{
+        padding-top: 0;
+    }
+    .content__bottom .content__bottom-link a{
+        width: 50%;
+    }
+    .content__bottom .content__bottom-link img{
+        width: 70%;
+    }
+    .content__bottom .content__bottom-link .img-right{
+        text-align: right;
+    }
+    .nft__text .nft__text-link{
+        display: none;
+    }
+    
+    .nft{
+        padding-right: 0;
+    }
 
 }
+
+@media(max-width: 621px){
+    .nft .swiper-container .swiper-wrapper .swiper-slide .img-big{
+        max-width: 303px;
+    }
+    .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card{
+        max-width: 303px;
+    }
+    .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr{
+        padding: 25px 25px 18px 20px;
+    }
+    .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-title{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13.6006px;
+        line-height: 27px;
+    }
+
+
 @media(max-width:500px){
     .content__left-title .span-one{
         display: block;
@@ -166,9 +204,6 @@
 }
 
 @media(max-width: 432px){
-    .content__left-btn .hexagon_btn{
-
-    }
     .content__left-btn .hexagon_btn span{
         padding: 10px 80px 10px 20px;
                 font-family: 'Orbitron';
@@ -199,7 +234,7 @@
 
     .content__right .card {
         width: 100%;
-        max-width: 324px;
+        max-width: 374px;
         right: 0;
         left: 0;
         bottom: -80px;
@@ -208,11 +243,22 @@
     .content__right .card .card-content{
         padding-right: 0;
         width: 100%;
-        max-width: 324px;
+        max-width: 374px;
         justify-content: flex-start;
         flex-basis: 0;
     }
     .content__right .card .card-content .card-content-right {
         margin-left: 40px;
     }
-}
+    .content__right .content__right-bgc{
+        width: 100%;
+    }
+    .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user a {
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.9006px;
+        line-height: 27px;
+        margin: 0;
+    }
+}}

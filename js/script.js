@@ -43,3 +43,24 @@ window.addEventListener('scroll', ()=>{
     header.classList.remove('header-fixed');
   }
 })
+
+
+let swiper = new Swiper(".swiper1",{
+  spaceBetween: 30,
+
+  centerSlides: 'true',
+  fade: 'true',
+  breakpoints: {
+      320: {
+          slidesPerView: 1.5,
+          spaceBetween: 150,
+      },
+      950: {
+          slidesPerView: 1.5,
+          spaceBetween: 50,
+      },
+      1095: {
+          slidesPerView: 3,
+      },
+  }
+});
