@@ -19,6 +19,13 @@
         grid-row: 3/4;
       
     }
+    .content__right .card {
+        /* width: 100%; */
+        right: 0;
+        left: 0;
+        bottom: 0;
+       margin: 0 auto;
+    }
 }
 
 @media(max-width:800px){
@@ -151,4 +158,61 @@
     }
 
 
+}
+@media(max-width:500px){
+    .content__left-title .span-one{
+        display: block;
+    }
+}
+
+@media(max-width: 432px){
+    .content__left-btn .hexagon_btn{
+
+    }
+    .content__left-btn .hexagon_btn span{
+        padding: 10px 80px 10px 20px;
+                font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #FFFFFF;
+    }
+    .content__left-btn .hexagon_btn span::after{
+        top: 8px;
+        font-size: 25px;
+        right: 30px;
+    }
+    .content__left-btn a{
+        
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+
+@media(max-width:400px){
+
+    .content__right .card {
+        width: 100%;
+        max-width: 324px;
+        right: 0;
+        left: 0;
+        bottom: -80px;
+       margin: 0 auto;
+    }
+    .content__right .card .card-content{
+        padding-right: 0;
+        width: 100%;
+        max-width: 324px;
+        justify-content: flex-start;
+        flex-basis: 0;
+    }
+    .content__right .card .card-content .card-content-right {
+        margin-left: 40px;
+    }
 }

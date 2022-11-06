@@ -26,7 +26,6 @@ function closeMenu(){
 
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 
-// крутилка на кнопке
 
 
 // fixed header
