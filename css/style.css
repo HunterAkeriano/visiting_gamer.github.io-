@@ -488,6 +488,7 @@ main {
 }
 .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr {
   display: flex;
+  justify-content: space-between;
   padding: 35px 35px 20px 30px;
 }
 .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-title {
@@ -510,4 +511,134 @@ main {
   line-height: 46px;
   color: #FFFFFF;
   margin: 0 5px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-ovr-left-text {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.4001px;
+  line-height: 46px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-ovr-left-nft {
+  display: flex;
+  align-items: center;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-ovr-left-nft p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.6587px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-ovr-left-nft span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.4001px;
+  line-height: 46px;
+  /* or 320% */
+  /* White/White 100 */
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.4001px;
+  line-height: 46px;
+  /* or 320% */
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time {
+  display: flex;
+  justify-content: space-between;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card p {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.0401px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4001px;
+  line-height: 46px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .sered-time {
+  margin: 0 20px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn {
+  cursor: pointer;
+  border: 0;
+  padding: 2px;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span {
+  display: block;
+  padding: 7px 45px 7px 10px;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.6873px;
+  line-height: 23px;
+  /* identical to box height */
+  position: relative;
+  color: #FFFFFF;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span:after {
+  content: "→";
+  position: absolute;
+  font-size: 20px;
+  top: 7px;
+  right: 10px;
+}
+.nft-button {
+  cursor: pointer;
+  display: none;
+  border: 0;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  padding: 2px;
+  -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+          clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  white-space: nowrap;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.nft-button span {
+  display: block;
+  padding: 20px 100px 20px 40px;
+  color: white;
+  background: rgb(32, 8, 59);
+  -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+          clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  transition: 0.5s;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.8983px;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: relative;
+}
+.nft-button span:after {
+  content: "→";
+  position: absolute;
+  font-size: 40px;
+  top: 17px;
+  right: 20px;
 }/*# sourceMappingURL=style.css.map */
