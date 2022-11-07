@@ -33,12 +33,26 @@
     }
     .buttin .buttin__left{
         width: 100%;
+        margin-top: 0;
     }
     .buttin .buttin__left .button-tab{
         width: 45%;
     }
     .buttin .buttin__right{
         width: 100%;
+    }
+    .buttonn .buttin__left .buttin-link a{
+        
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8.24417px;
+        line-height: 10px;
+    }
+    .buttonn .buttin__left .buttin-link a::after{
+        font-size: 20px;
+        margin-top: 5px;
+        padding-left: 10px;
     }
 }
 @media(max-width:800px){
