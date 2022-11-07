@@ -652,7 +652,7 @@ main {
 }
 .buttonn .buttin__left {
   width: 50%;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .buttonn .buttin__left-title {
   font-family: "Orbitron";
@@ -713,4 +713,9 @@ main {
   margin: 0 auto;
   margin-top: 100px;
   width: 50%;
+}
+.buttonn .buttin__right .buttin__right-img.active .gitl-tab {
+  width: 95%;
+  max-height: 814px;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

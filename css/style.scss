@@ -715,7 +715,7 @@ main{
         justify-content: space-between;
         &__left{
             width: 50%;
-            margin-top: 50px;
+            margin-top: 100px;
             &-title{
                 font-family: 'Orbitron';
                 font-style: normal;
@@ -774,6 +774,12 @@ main{
                     margin: 0 auto;
                     margin-top: 100px;
                     width: 50%;
+                    
+                }
+                .gitl-tab{
+                    width: 95%;
+                    max-height: 814px;
+                    height: 100%;
                 }
             }
         }
