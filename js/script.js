@@ -64,3 +64,29 @@ let swiper = new Swiper(".swiper1",{
       },
   }
 });
+
+
+// табы блядские
+
+const btnTab = document.querySelectorAll('.button-tab');
+const tabsItem = document.querySelectorAll('.buttin__right-img');
+
+
+btnTab.forEach(function(item){
+  item.addEventListener('click', function(){
+    let currentBTN = item;
+    let tabId = currentBTN.getAttribute('data-tab');
+    let cuurentTab = document.querySelector(tabId);
+    btnTab.forEach(function(item){
+      item.classList.remove('active')
+  })
+  tabsItem.forEach(function(item){
+    item.classList.remove('active')
+})
+
+
+    currentBTN.classList.add('active');
+    cuurentTab.classList.add('active');
+  })
+  
+})
