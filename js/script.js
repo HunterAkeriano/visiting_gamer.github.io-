@@ -53,7 +53,7 @@ let swiper = new Swiper(".swiper1",{
   breakpoints: {
       320: {
           slidesPerView: 1.5,
-          spaceBetween: 150,
+          spaceBetween: 130,
       },
       950: {
           slidesPerView: 1.5,
