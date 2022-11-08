@@ -20,6 +20,7 @@ body {
   font-family: "Spartan";
   font-family: "Rajdhani", sans-serif;
   font-family: "Aldrich", sans-serif;
+  font-family: "Inter", sans-serif;
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
 }
@@ -1046,4 +1047,76 @@ main {
   font-size: 40px;
   top: 17px;
   right: 40px;
+}
+
+.what {
+  margin-top: 150px;
+  background: url("../images/bgc-what.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.what__content {
+  display: flex;
+  justify-content: flex-end;
+}
+.what__content-box {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(72.8013px);
+          backdrop-filter: blur(72.8013px);
+  border: 2px solid rgb(85, 84, 84);
+  padding: 60px 47px 50px 47px;
+  max-width: 577px;
+  margin-top: 200px;
+}
+.what__content-box .box-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44.5093px;
+  line-height: 60px;
+  /* or 135% */
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+}
+.what__content-box .box-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.0292px;
+  line-height: 36px;
+  /* or 178% */
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.what__content-box .box-video {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.what__content-box .box-video .link-box {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.what__content-box .box-video a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.8037px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+}
+
+.sub {
+  margin-top: 160px;
+}
+
+.subscribe {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
