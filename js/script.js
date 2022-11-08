@@ -111,3 +111,17 @@ let swiperTwo = new Swiper(".swiper2",{
       },
   }
 });
+
+
+// span btn
+
+const spanBtn = document.getElementById('span-sellers');
+const textPata = document.querySelector('.sellers__text-text');
+const imgSpan = document.getElementById('img-span');
+function openText(){
+  textPata.classList.toggle('active');
+  imgSpan.classList.toggle('active');
+}
+
+spanBtn.addEventListener('click', openText);
+imgSpan.addEventListener('click', openText);

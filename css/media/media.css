@@ -1,3 +1,12 @@
+@media(max-width: 1250px){
+    .sellers__card .card-end{
+        display: none;
+    }
+    .sellers__card .card{
+        width: 45%;
+    }
+}
+
 @media(max-width: 1000px){
     .main{
         margin-top: 20px;
@@ -27,6 +36,23 @@
        margin: 0 auto;
     }
 }
+
+@media(max-width: 920px){
+    .sellers__card .card-end-last{
+        display: none;
+    }
+    .sellers__card .card{
+        width: 100%;
+    }
+    .sellers__btn .sellers__btn-desktop{
+        display: none;
+    }
+    .sellers__btn .sellers__btn-mobile{
+        display: block;
+    }
+}
+
+
 @media(max-width: 932px){
     .buttin{
         flex-direction: column;
@@ -40,6 +66,10 @@
     }
     .buttin .buttin__right{
         width: 100%;
+    }
+    .buttonn .buttin__right .buttin__right-img.active .gitl-tab,
+    .buttonn .buttin__right .buttin__right-img.active .one-img{
+        height: 400px;
     }
     .buttonn .buttin__left .buttin-link a{
         
@@ -354,6 +384,53 @@
 @media(max-width:500px){
     .content__left-title .span-one{
         display: block;
+    }
+}
+@media(max-width: 500px){
+    .sellers__card .card .card-number{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.8072px;
+        line-height: 32px;
+    }
+    .sellers__card .card .card-info .card-info-title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.8072px;
+        line-height: 32px;
+    }
+    .sellers__card .card .card-info .card-info-car span{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9.97186px;
+        line-height: 32px;
+    }
+    .sellers__card .card .card-percent{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10.6564px;
+        /* line-height: 34px; */
+    }
+    .sellers__card .card .card-info{
+        margin: 0;
+    }
+    .sellers__text-title{
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19.2314px;
+        line-height: 24px;
+    }
+    .sellers__text-text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140.19%;
     }
 }
 
