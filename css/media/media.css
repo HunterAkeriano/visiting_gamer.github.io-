@@ -286,7 +286,70 @@
         
     }
 }
+@media(max-width: 542px){
+    .people{
+        padding-right: 0;
+    }
+    .people__text-title{
+        
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.0606px;
+    line-height: 23px;
+    }
+    .people__text-link{
+        display: none;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide{
+        width: 303px;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-obert{
+        width: 303px;
+        height: 200px;
+        padding: 0;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-photo{
+        width: 112px;
+        margin: 0;
+        margin-left: -56px;
+        top: 0;
+        top: -60px;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info{
+        width: 303px;
+        padding-top: 60px;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-info-title{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16.8391px;
+        line-height: 32px;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers a{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.9587px;
+        line-height: 32px;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text p{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21.9417px;
+        line-height: 44px;
+    }
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text span{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.7136px;
+        line-height: 44px;
+    }
 
+}
 
 @media(max-width:500px){
     .content__left-title .span-one{

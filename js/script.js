@@ -89,4 +89,25 @@ btnTab.forEach(function(item){
     cuurentTab.classList.add('active');
   })
   
-})
+});
+
+
+let swiperTwo = new Swiper(".swiper2",{
+  spaceBetween: 50,
+
+  centerSlides: 'true',
+  fade: 'true',
+  breakpoints: {
+      320: {
+          slidesPerView: 1.5,
+          spaceBetween: 130,
+      },
+      950: {
+          slidesPerView: 1.5,
+          spaceBetween: 50,
+      },
+      1095: {
+          slidesPerView: 3,
+      },
+  }
+});

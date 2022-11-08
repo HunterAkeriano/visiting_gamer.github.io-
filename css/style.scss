@@ -807,3 +807,168 @@ main{
         }
     }
 }
+.people{
+    max-width: 1520px;
+    padding: 0 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-title{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26.531px;
+            line-height: 33px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+        }
+        &-link{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26.531px;
+            line-height: 33px;
+            /* identical to box height */
+
+            margin-right: 10px;
+            color: #FFFFFF;
+        }
+        &-link::after{
+            content: '→';
+            // position: absolute;
+                font-size: 40px;
+                margin-top: 5px;
+                padding-left: 20px;
+        }
+    }
+
+    .swiper2{
+        overflow: hidden;
+        margin-top: 50px;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 400px;
+                .slide-obert{
+                    background: url('../images/swiper-people/bgc-people.png') no-repeat;
+                    // background-size: contain;
+                    background-position: top center;
+                    width: 400px;
+                    text-align: center;
+                    height: 220px;
+               
+                    border: 3px solid rgb(121, 118, 118);
+                    border-bottom: 0;
+                }
+                .slide-info{
+                    margin-top: -50px;
+                    border: 3px solid rgb(121, 118, 118);
+                    border-top: 0;
+                    width: 400px;
+                    padding-bottom: 40px;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+                    backdrop-filter: blur(39.6002px);
+                    padding-top: 60px;
+                    position: relative;
+                    .slide-photo{
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -87px;
+                        top: -110px;
+                    }
+                   .slide-info-title{
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24.3201px;
+                    line-height: 46px;
+                    /* or 189% */
+                    
+                    text-align: center;
+
+                    color: #FFFFFF;
+                    // background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+                    // backdrop-filter: blur(39.6002px); 
+                   }
+                   .link-swipers{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a{
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20.1601px;
+                        line-height: 46px;
+                        /* or 229% */
+                        color: #FFB1EE;
+                        margin-right: 5px;
+                    }
+                   }
+                   .sliders-info{
+                    display: flex;
+                    justify-content: space-around;
+                    .sliders-info-text{
+                        p{
+                            text-align: center;
+                            font-family: 'Rajdhani';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 31.6897px;
+                            line-height: 63px;
+                            color: #FFFFFF;
+                        }
+                        span{
+                            font-family: 'Rajdhani';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 19.8061px;
+                            // line-height: 63px;
+                            color: #FFFFFF;
+
+                            opacity: 0.7;
+                        }
+                    }
+                   }
+                   .sliders-btn{
+                    text-align: center;
+                    margin-top: 50px;
+                    .btn-slc{
+                        cursor: pointer;
+                        border: 0;
+                        padding: 2px;
+                        background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+                        span{
+                            display: block;
+                            padding: 11px 75px;
+                             background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+                             font-family: 'Rajdhani';
+                             font-style: normal;
+                             font-weight: 600;
+                             font-size: 19.8983px;
+                             line-height: 25px;
+                             text-align: center;
+                             
+                             color: #FFFFFF;
+                            }
+                    }
+                   }
+                }
+            }
+        }
+    }
+
+
+}
+
+.sellers{
+    margin-top: 160px;
+}
