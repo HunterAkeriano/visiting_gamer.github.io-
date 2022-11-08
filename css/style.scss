@@ -1216,8 +1216,91 @@ main{
     }
 }
 .sub{
-    margin-top: 160px;
+    margin-top: 260px;
 }
 .subscribe{
     display: flex;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+    &__left{
+        background: url('../images/img-form.png') no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 55%;
+    }
+    &__right{
+        width: 45%;
+        padding-top: 30px;
+        max-width: 580px;
+        padding-left: 70px;
+        &-title{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 39.7965px;
+            line-height: 50px;
+            /* identical to box height */
+
+            font-feature-settings: 'salt' on, 'liga' off;
+            color: #FFFFFF;
+        }
+        &-text{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19.8983px;
+            line-height: 35px;
+            /* or 178% */
+           
+            margin-top: 27px;
+            font-feature-settings: 'salt' on, 'liga' off;
+            
+            color: #FFFFFF;
+        }
+        &-form{
+            display: flex;
+            margin-top: 60px;
+            input{
+                padding: 10px 15px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15.4764px;
+                line-height: 27px;
+                /* identical to box height, or 171% */
+
+                font-feature-settings: 'salt' on, 'liga' off;
+
+                /* Text / Gray 800 */
+
+                color: #474A57;
+                border-radius: 5.5273px 0px 0px 5.5273px
+            }
+            button{
+                border-radius: 0px 5.5273px 5.5273px 0px;
+                cursor: pointer;
+               
+                margin-left: 10px;
+                padding: 2px;
+                background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+                border: 0;
+                border-radius: 0px 5.5273px 5.5273px 0px;
+                span{
+                    display: block;
+                    padding: 11px 33px;
+                     background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+                     font-family: 'Rajdhani';
+                     font-style: normal;
+                     font-weight: 600;
+                     font-size: 19.8983px;
+                     line-height: 25px;
+                     text-align: center;
+                     
+                     color: #FFFFFF;
+                     border-radius: 0px 5.5273px 5.5273px 0px;
+                }
+
+            }
+        }
+    }
 }
