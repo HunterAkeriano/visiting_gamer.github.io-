@@ -158,8 +158,7 @@ main {
   grid-column: 1/2;
 }
 .content__left-title {
-  font-family: "Spartan";
-  font-style: normal;
+  font-family: "League Spartan", sans-serif;
   font-weight: 600;
   font-size: 66.3276px;
   line-height: 137.4%;
