@@ -81,7 +81,7 @@
         display: block;
         transition: 0.5s;
     }
-    .images-strelka{
+    .accordeon__link-place .images-strelka {
         display: inline;
     }
     .accordeon__link-place .place-title {

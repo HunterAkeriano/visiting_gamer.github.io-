@@ -1328,6 +1328,9 @@ main{
             img{
                 padding-right: 5px;
             }
+            .images-strelka{
+               
+            }
         }
         &-text{
             font-family: 'Inter';
@@ -1366,7 +1369,8 @@ main{
     margin-left: 40px;
     &-place{
         .images-strelka{
-            // display: none;
+            display: none;
+            
         }
         .place-title{
             font-family: 'Inter';

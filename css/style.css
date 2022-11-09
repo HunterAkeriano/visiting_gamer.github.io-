@@ -1253,6 +1253,9 @@ main {
   flex-basis: 100%;
   margin-left: 40px;
 }
+.accordeon__link-place .images-strelka {
+  display: none;
+}
 .accordeon__link-place .place-title {
   font-family: "Inter";
   font-style: normal;
