@@ -209,9 +209,8 @@
 
     }
     .content__left-title{
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 700;
+        font-family: "Spartan", sans-serif;
+        font-weight: 600;
         font-size: 42px;
         line-height: 137.4%;
         /* or 58px */
@@ -279,8 +278,7 @@
         line-height: 28px;
     }
     .content__left-info .info-one span{
-        font-family: 'Lato';
-        font-style: normal;
+        font-family: "Alethia Next";
         font-weight: 400;
         font-size: 12px;
         line-height: 12px;
