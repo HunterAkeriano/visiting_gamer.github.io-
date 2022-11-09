@@ -302,6 +302,71 @@
     .nft{
         padding-right: 0;
     }
+    .nft__text-title{
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .buttonn .buttin__left-title {
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+    }
+    .nft-button span,
+    .sellers__btn .sellers__btn-mobile span{
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #FFFFFF;
+    }
+    .nft-button span::after,
+    .sellers__btn .sellers__btn-mobile span::after{
+        font-size: 30px;
+        right: 40px;
+    }
+    .accordeon__info-link{
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19.8983px;
+        line-height: 25px;
+
+        color: #FFFFFF;
+    }
+    .accordeon__info-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4764px;
+        line-height: 27px;
+        /* or 171% */
+
+        font-feature-settings: 'salt' on, 'liga' off;
+
+        /* Text / Gray 300 */
+
+        color: #D9DBE1;
+    }
+    .accordeon__link-place .place-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19.8983px;
+        line-height: 31px;
+        margin-top: 10px;
+    }
+    .footer__link{
+        justify-content: space-between;
+    }
 
 }
 
