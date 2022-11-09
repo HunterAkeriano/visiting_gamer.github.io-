@@ -58,11 +58,14 @@ let swiper = new Swiper(".swiper1",{
       },
       950: {
           slidesPerView: 1.5,
-          spaceBetween: 50,
+          spaceBetween: 30,
       },
       1095: {
-          slidesPerView: 3,
+          slidesPerView: 2.5,
       },
+      1290:{
+        slidesPerView: 3,
+      }
   }
 });
 
@@ -106,7 +109,7 @@ let swiperTwo = new Swiper(".swiper2",{
   },
   950: {
       slidesPerView: 1.5,
-      spaceBetween: 50,
+      spaceBetween: 30,
   },
   1095: {
       slidesPerView: 3,
