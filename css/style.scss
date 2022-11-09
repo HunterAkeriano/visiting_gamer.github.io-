@@ -20,7 +20,9 @@ body{
     font-family: "Rajdhani", sans-serif;
     font-family: "Aldrich", sans-serif;
     font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-family: "Orbitron", sans-serif;
+    
     overflow-x: hidden;
 }
 a{
@@ -316,10 +318,10 @@ main{
            
         }
         .card{
-            max-width: 370px;
+            max-width: 320px;
             position: absolute;
             bottom: 80px;
-            right: -50px;
+            right: -10px;
             background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
             padding: 2px; 
             clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
@@ -328,8 +330,8 @@ main{
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
                 clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
                 backdrop-filter: blur(30.4001px);
-                width: 370px;
-                padding: 25px 30px 10px 15px;
+                width: 300px;
+                padding: 15px 15px 10px 15px;
                 display: flex;
                 justify-content: space-between;
 
@@ -670,7 +672,9 @@ main{
                     }
                    }
             }
-           
+           .last-slide{
+            display: inline;
+           }
            }
         }
     &-button{

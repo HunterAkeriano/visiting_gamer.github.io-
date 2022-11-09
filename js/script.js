@@ -52,8 +52,9 @@ let swiper = new Swiper(".swiper1",{
   fade: 'true',
   breakpoints: {
       320: {
-          slidesPerView: 1.5,
-          spaceBetween: 130,
+          slidesPerView: 1.1,
+          spaceBetween: 15,
+          centerSlides: 'true',
       },
       950: {
           slidesPerView: 1.5,
@@ -98,17 +99,18 @@ let swiperTwo = new Swiper(".swiper2",{
   centerSlides: 'true',
   fade: 'true',
   breakpoints: {
-      320: {
-          slidesPerView: 1.5,
-          spaceBetween: 130,
-      },
-      950: {
-          slidesPerView: 1.5,
-          spaceBetween: 50,
-      },
-      1095: {
-          slidesPerView: 3,
-      },
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 15,
+      centerSlides: 'true',
+  },
+  950: {
+      slidesPerView: 1.5,
+      spaceBetween: 50,
+  },
+  1095: {
+      slidesPerView: 3,
+  },
   }
 });
 
