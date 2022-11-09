@@ -52,6 +52,46 @@
     }
 }
 
+@media(max-width: 900px){
+    .accordeon{
+        flex-direction: column;
+        flex-basis: 100%;
+        border: 0;
+    }
+    .accordeon__link{
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .accordeon__link-place{
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        /* padding-bottom: 5px; */
+        transition: 0.5s;
+    }
+    .accordeon__link-place .input-link{
+        display: inline;
+        appearance: none;
+    }
+     .link-place{
+        display: none;
+        transition: 0.5s;
+    }
+    .input-link:checked + .link-place{
+        display: block;
+        transition: 0.5s;
+    }
+    .images-strelka{
+        display: inline;
+    }
+    .accordeon__link-place .place-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
 @media(max-width: 920px){
     .sellers__card .card-end-last{
         display: none;
@@ -143,6 +183,23 @@
         margin: 20px 0;
     }
    
+}
+
+@media(max-width: 722px){
+    .footer{
+        flex-direction: column-reverse;
+       
+    }
+    .end-footer{
+        display: none;
+    }
+    .footer__link{
+        margin-bottom: 10px;
+    }
+    .link-footer::after,
+    .link-footer::before{
+       display: none;
+    }
 }
 @media(max-width: 768px){
     .content{

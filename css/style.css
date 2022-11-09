@@ -1193,4 +1193,135 @@ main {
   text-align: center;
   color: #FFFFFF;
   border-radius: 0px 5.5273px 5.5273px 0px;
+}
+
+.acord {
+  margin-top: 50px;
+}
+
+.accordeon {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 50px;
+}
+.accordeon__info {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.accordeon__info-link {
+  display: flex;
+  align-items: center;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.8983px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.accordeon__info-link img {
+  padding-right: 5px;
+}
+.accordeon__info-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  /* or 171% */
+  max-width: 290px;
+  font-feature-settings: "salt" on, "liga" off;
+  /* Text / Gray 300 */
+  color: #D9DBE1;
+  margin-top: 30px;
+}
+.accordeon__info-social {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.accordeon__info-social a {
+  margin: 0 10px;
+}
+.accordeon__info-social .one-link-acord {
+  margin: 0;
+  margin-right: 10px;
+}
+.accordeon__link {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin-left: 40px;
+}
+.accordeon__link-place .place-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.8983px;
+  line-height: 31px;
+  /* identical to box height, or 156% */
+  font-feature-settings: "salt" on, "liga" off;
+  /* Default / White */
+  color: #FFFFFF;
+}
+.accordeon__link-place .input-link {
+  display: none;
+}
+.accordeon__link-place .link-place {
+  margin-top: 20px;
+}
+.accordeon__link-place .link-place a {
+  margin-bottom: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  /* identical to box height, or 171% */
+  font-feature-settings: "salt" on, "liga" off;
+  /* Text / Gray 300 */
+  color: #D9DBE1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.footer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  /* identical to box height, or 171% */
+  font-feature-settings: "salt" on, "liga" off;
+  /* Text / Gray 300 */
+  color: #D9DBE1;
+}
+.footer__link {
+  display: flex;
+}
+.footer__link a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.4764px;
+  line-height: 27px;
+  /* identical to box height, or 171% */
+  font-feature-settings: "salt" on, "liga" off;
+  /* Text / Gray 300 */
+  color: #D9DBE1;
+}
+.footer__link .link-footer {
+  margin: 0 20px;
+}
+.footer__link .link-footer::before {
+  content: "|";
+  padding-right: 10px;
+}
+.footer__link .link-footer::after {
+  content: "|";
+  padding-left: 10px;
 }/*# sourceMappingURL=style.css.map */
