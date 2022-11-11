@@ -121,10 +121,11 @@
     }
     .buttin .buttin__right{
         width: 100%;
+        min-height: 100%;
     }
-    .buttonn .buttin__right .buttin__right-img.active .gitl-tab,
-    .buttonn .buttin__right .buttin__right-img.active .one-img{
-        height: 400px;
+    .buttonn .buttin__right .buttin__right-img{
+        height: 300px;
+        
     }
     .buttonn .buttin__left .buttin-link a{
         
@@ -138,6 +139,9 @@
         font-size: 20px;
         margin-top: 5px;
         padding-left: 10px;
+    }
+    .people{
+        margin-top: 20px;
     }
 }
 @media(max-width:800px){
@@ -454,12 +458,12 @@
 }
 
 @media(max-width: 621px){
-    .nft .swiper-container .swiper-wrapper .swiper-slide .img-big{
+    /* .nft .swiper-container .swiper-wrapper .swiper-slide .img-big{
         max-width: 303px;
     }
     .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card{
         max-width: 303px;
-    }
+    } */
     .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr{
         padding: 25px 25px 18px 20px;
     }
@@ -549,11 +553,11 @@
     .people__text-link{
         display: none;
     }
-    .people .swiper2 .swiper-wrapper .swiper-slide{
+    /* .people .swiper2 .swiper-wrapper .swiper-slide{
         width: 303px;
-    }
+    } */
     .people .swiper2 .swiper-wrapper .swiper-slide .slide-obert{
-        width: 303px;
+        /* width: 303px; */
         height: 200px;
         padding: 0;
     }
@@ -565,7 +569,7 @@
         top: -60px;
     }
     .people .swiper2 .swiper-wrapper .swiper-slide .slide-info{
-        width: 303px;
+        /* width: 303px; */
         padding-top: 60px;
     }
     .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-info-title{
@@ -696,6 +700,16 @@
         background-position: center;
     }
 }
+
+@media(max-width: 415px){
+    .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span{
+        padding: 7px 30px 7px 5px;
+        font-weight: 600;
+font-size: 13.6006px;
+line-height: 17px;
+    }
+}
+
 
 @media(max-width:400px){
 

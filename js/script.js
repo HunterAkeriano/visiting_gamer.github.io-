@@ -52,8 +52,7 @@ let swiper = new Swiper(".swiper1",{
   fade: 'true',
   breakpoints: {
       320: {
-          slidesPerView: 1.1,
-          spaceBetween: 15,
+          slidesPerView: 1.3,
           centerSlides: 'true',
       },
       950: {
