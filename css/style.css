@@ -744,6 +744,7 @@ main {
   background-size: contain;
   background-position: center;
   margin: 0 auto;
+  margin-left: 50px;
   min-height: inherit;
   height: inherit;
 }
