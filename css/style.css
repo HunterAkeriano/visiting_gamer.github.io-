@@ -803,6 +803,7 @@ main {
 }
 .people .swiper2 .swiper-wrapper .swiper-slide .slide-obert {
   background: url("../images/swiper-people/bgc-people.png") no-repeat;
+  background-size: cover;
   background-position: top center;
   width: 100%;
   text-align: center;
